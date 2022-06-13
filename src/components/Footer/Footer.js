@@ -35,7 +35,7 @@ export default function Footer() {
       <Container>
         <Row>
           <Col md="3">
-            <h1 className="title">BLK•</h1>
+            <h1 className="title">CS•</h1>
           </Col>
           <Col md="3">
             <Nav>
@@ -91,7 +91,7 @@ export default function Footer() {
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
-                href="https://twitter.com/creativetim"
+                href="#pablo"
                 id="tooltip622135962"
                 target="_blank"
               >
@@ -103,7 +103,7 @@ export default function Footer() {
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
-                href="https://www.facebook.com/creativetim"
+                href="#pablo"
                 id="tooltip230450801"
                 target="_blank"
               >
@@ -115,7 +115,7 @@ export default function Footer() {
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
-                href="https://dribbble.com/creativetim"
+                href="#pablo"
                 id="tooltip318450378"
                 target="_blank"
               >
