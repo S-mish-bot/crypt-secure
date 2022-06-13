@@ -120,7 +120,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="#pablo"
+                href="#"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Like us on Facebook"
@@ -132,7 +132,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="#pablo"
+                href="#"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow us on Instagram"
@@ -146,7 +146,7 @@ export default function IndexNavbar() {
                 caret
                 color="default"
                 data-toggle="dropdown"
-                href="#pablo"
+                href="#"
                 nav
                 onClick={(e) => e.preventDefault()}
               >
@@ -177,9 +177,9 @@ export default function IndexNavbar() {
                 className="nav-link d-none d-lg-block"
                 color="primary"
                 target="_blank"
-                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
+                href="#"
               >
-                <i className="tim-icons icon-spaceship" /> Upgrade to PRO
+                <i className="tim-icons icon-spaceship" /> Contact Us
               </Button>
             </NavItem>
             <NavItem>

@@ -1,20 +1,4 @@
-/*!
 
-=========================================================
-* BLK Design System React - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // reactstrap components
 import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
@@ -35,12 +19,12 @@ export default function Download() {
         <Row className="justify-content-md-center">
           <Col className="text-center" lg="8" md="12">
             <h2 className="title">
-              Do you love this Bootstrap 4 React Design System?
+              Do you love this Crypt Secure Tool to understand Security?
             </h2>
             <h4 className="description">
               Cause if you do, it can be yours for FREE. Hit the button below to
-              navigate to Creative Tim where you can find the design system in
-              React format. Start a new project or give an old Bootstrap project
+              navigate to Github Repo where you can find the design system in
+              React format. Start a new project or give this project
               a new look!
             </h4>
           </Col>
@@ -48,7 +32,7 @@ export default function Download() {
             <Button
               className="btn-round"
               color="info"
-              href="https://www.creative-tim.com/product/blk-design-system-react?ref=blkdsr-index-page-download-section"
+              href="#"
               role="button"
               size="lg"
             >
