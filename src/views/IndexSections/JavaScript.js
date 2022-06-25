@@ -1,6 +1,8 @@
 
 import React from "react";
 import classnames from "classnames";
+import Keypad from "./components/Keypad/Keypad";
+import Protected from "./components/Protected/Protected";
 
 // reactstrap components
 import {
@@ -39,6 +41,7 @@ const carouselItems = [
 
 export default function JavaScript() {
   const [demoModal, setDemoModal] = React.useState(false);
+  const [demoModal1, setDemoModal1] = React.useState(false);
   const [miniModal, setMiniModal] = React.useState(false);
   const [formModal, setFormModal] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
@@ -64,35 +67,34 @@ export default function JavaScript() {
               Launch Modal Keypad
             </Button>
           </Col>
-          <Col md="4">
-            <Button color="warning" onClick={() => setMiniModal(true)}>
-              Launch Modal Keypad Random
-            </Button>
-          </Col>
+  
           <Col md="4">
             <Button color="success" onClick={() => setFormModal(true)}>
               Launch Modal 
             </Button>
           </Col>
+          <Col md="4">
+            <Button color="warning" onClick={() => setMiniModal(true)}>
+              Launch Modal Keypad Random
+            </Button>
+          </Col>
           {/* Sart Demo Modal */}
-          <Modal isOpen={demoModal} toggle={() => setDemoModal(false)}>
+          <Modal modalClassName="modal-black" isOpen={demoModal} toggle={() => setDemoModal(false)}>
             <div className="modal-header justify-content-center">
               <button className="close" onClick={() => setDemoModal(false)}>
                 <i className="tim-icons icon-simple-remove" />
               </button>
-              <h4 className="title title-up">Modal title</h4>
+              <h4 className="title title-up">Normal Keypad</h4>
             </div>
-            <div className="modal-body">
-              <p>
-              lalalalalalal lalalalalalalal lalalalalalallalalalal
-              lalallalalalalallal lalallalalalalllalalalalalallala
-              lalalalalalalalalala
-              </p>
+            <div className="modal-body" style={{color: 'black'}}>
+         
+              <Keypad />
+         
             </div>
             <div className="modal-footer">
-              <Button color="default" type="button">
+              {/* <Button color="default" type="button">
                 Nice Button
-              </Button>
+              </Button> */}
               <Button
                 color="danger"
                 type="button"
@@ -104,7 +106,7 @@ export default function JavaScript() {
           </Modal>
           {/* End Demo Modal */}
           {/* Start Mini Modal */}
-          <Modal
+          {/* <Modal
             modalClassName="modal-mini modal-primary modal-mini"
             isOpen={miniModal}
             toggle={() => setMiniModal(false)}
@@ -112,13 +114,13 @@ export default function JavaScript() {
             <div className="modal-header justify-content-center">
               <button className="close" onClick={() => setMiniModal(false)}>
                 <i className="tim-icons icon-simple-remove text-white" />
-              </button>
-              <div className="modal-profile">
+              </button> */}
+              {/* <div className="modal-profile">
                 <i className="tim-icons icon-single-02" />
-              </div>
-            </div>
+              </div> */}
+            {/* </div>
             <div className="modal-body">
-              <p>Always have an access to your profile</p>
+              <Protected />
             </div>
             <div className="modal-footer">
               <Button className="btn-neutral" color="link" type="button">
@@ -133,7 +135,7 @@ export default function JavaScript() {
                 Close
               </Button>
             </div>
-          </Modal>
+          </Modal> */}
           {/* End Mini Modal */}
           {/* Start Form Modal */}
           <Modal
@@ -145,13 +147,15 @@ export default function JavaScript() {
               <button className="close" onClick={() => setFormModal(false)}>
                 <i className="tim-icons icon-simple-remove text-white" />
               </button>
-              <div className="text-muted text-center ml-auto mr-auto">
+              <h4 className="title title-up">Random Keypad</h4>
+              {/* <div className="text-muted text-center ml-auto mr-auto">
                 <h3 className="mb-0">Sign in with</h3>
-              </div>
+              </div> */}
             </div>
             <div className="modal-body">
               <div className="btn-wrapper text-center">
-                <Button
+                <Protected />
+                {/* <Button
                   className="btn-neutral btn-icon"
                   color="default"
                   href="#pablo"
@@ -226,9 +230,23 @@ export default function JavaScript() {
                 <div className="text-center">
                   <Button className="my-4" color="primary" type="button">
                     Sign in
-                  </Button>
-                </div>
+                  </Button> */}
+                {/* </div>
               </Form>
+            </div> */}
+            </div>
+            <div className="modal-footer">
+              {/* <Button color="default" type="button">
+                Nice Button
+              </Button> */}
+              <Button
+                color="danger"
+                type="button"
+                onClick={() => setFormModal(false)}
+              >
+                Close
+              </Button>
+            </div>
             </div>
           </Modal>
           {/* End Form Modal */}

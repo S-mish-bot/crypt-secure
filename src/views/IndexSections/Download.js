@@ -80,7 +80,7 @@ export default function Download() {
             <Button
               className="btn-icon btn-round"
               color="github"
-              href="https://github.com/creativetimofficial"
+              href="#"
               id="tooltip877922017"
               size="lg"
               target="_blank"

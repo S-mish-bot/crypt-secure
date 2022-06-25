@@ -17,7 +17,7 @@ export default function PageHeader() {
       <Container>
         <div className="content-center brand">
           <h1 className="h1-seo">CS• <br/>Crypt Secure</h1>
-          <h3 className="d-none d-sm-block">
+          <h3 className="d-none d-sm-block"><br/>
             An effective way to secure data.<br/>
             It's Free and Open Source.
           </h3>
