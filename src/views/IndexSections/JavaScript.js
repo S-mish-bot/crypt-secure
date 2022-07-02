@@ -77,11 +77,19 @@ export default function JavaScript() {
           <Col md="3">
             <Button color="info" onClick={(e) => {
               e.preventDefault();
+              window.location.href = "http://localhost:3000"
+              }}>
+              Launch Module Keylogger
+            </Button>
+          </Col>
+          {/* <Col md="3">
+            <Button color="danger" onClick={(e) => {
+              e.preventDefault();
               window.location.href = "http://youtube.com/watch?v"
               }}>
               Launch Modal Password Checker
             </Button>
-          </Col>
+          </Col> */}
           {/* Sart Demo Modal */}
           <Modal modalClassName="modal-black" isOpen={demoModal} toggle={() => setDemoModal(false)}>
             <div className="modal-header justify-content-center">
