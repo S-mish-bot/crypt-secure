@@ -1,23 +1,18 @@
 
 import React from "react";
-import classnames from "classnames";
+
 import Keypad from "./components/Keypad/Keypad";
 import Protected from "./components/Protected/Protected";
 
 // reactstrap components
 import {
   Button,
-  FormGroup,
+  
   Container,
   Row,
   Col,
   Modal,
-  Form,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  Label,
+ 
   UncontrolledCarousel,
 } from "reactstrap";
 
@@ -41,11 +36,9 @@ const carouselItems = [
 
 export default function JavaScript() {
   const [demoModal, setDemoModal] = React.useState(false);
-  const [demoModal1, setDemoModal1] = React.useState(false);
-  const [miniModal, setMiniModal] = React.useState(false);
+
   const [formModal, setFormModal] = React.useState(false);
-  const [emailFocus, setEmailFocus] = React.useState(false);
-  const [passwordFocus, setPasswordFocus] = React.useState(false);
+
   return (
     <div className="section section-javascript" id="javascriptComponents">
       <img
@@ -60,22 +53,33 @@ export default function JavaScript() {
       />
       <Container>
         <h3 className="title mb-5">Crypt Secure components</h3>
-        <h4 className="mb-5">Modal</h4>
+        <h4 className="mb-5">Different Modules</h4>
         <Row id="modals">
-          <Col md="4">
+          <Col md="3">
             <Button color="primary" onClick={() => setDemoModal(true)}>
-              Launch Modal Keypad
+              Launch Module Keypad Normal
             </Button>
           </Col>
   
-          <Col md="4">
+          <Col md="3">
             <Button color="success" onClick={() => setFormModal(true)}>
-              Launch Modal 
+              Launch Module Keypad Random
             </Button>
           </Col>
-          <Col md="4">
-            <Button color="warning" onClick={() => setMiniModal(true)}>
-              Launch Modal Keypad Random
+          <Col md="3">
+            <Button color="warning" onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "http://youtube.com/watch?v"
+              }}>
+              Launch Module Password Checker
+            </Button>
+          </Col>
+          <Col md="3">
+            <Button color="info" onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "http://youtube.com/watch?v"
+              }}>
+              Launch Modal Password Checker
             </Button>
           </Col>
           {/* Sart Demo Modal */}
